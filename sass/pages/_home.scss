@@ -1,6 +1,5 @@
 .home {
   color: $font-color-grey;
-  padding: 0 5rem;
   justify-content: center;
 
   display: flex;
@@ -14,5 +13,8 @@
 
   &__text {
     font-size: 1.6rem;
+    align-self: center;
+    text-align: justify;
+    padding: 0 5rem;
   }
 }

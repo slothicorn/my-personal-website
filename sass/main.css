@@ -238,6 +238,7 @@ body {
   text-align: justify;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  padding: 0 5rem;
 }
 .portfolio__link, .portfolio__link:active, .portfolio__link:focus, .portfolio__link:visited {
   font-size: 1.7rem;
@@ -249,7 +250,6 @@ body {
 
 .home {
   color: rgb(231, 231, 231);
-  padding: 0 5rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -260,6 +260,9 @@ body {
 }
 .home__text {
   font-size: 1.6rem;
+  align-self: center;
+  text-align: justify;
+  padding: 0 5rem;
 }
 
 .swiper {
