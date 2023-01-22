@@ -17,3 +17,31 @@
     box-shadow: 0 8px 15px 4px rgba($color-btn, 0.7);
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: $bg-gradient;
+  background-clip: text;
+
+  &::after {
+    color: transparent;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.pagination-bullet {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background: $color-blue;
+
+  &-active {
+    background: $color-purple;
+  }
+}

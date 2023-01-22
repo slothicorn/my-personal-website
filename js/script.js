@@ -82,14 +82,14 @@ navItems.forEach(addNavListener);
 // import "../node_modules/swiper/css";
 
 const swiperPortfolio = new Swiper("#swiperPortfolio", {
-  // Optional parameters
-  // direction: "vertical",
   loop: true,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    bulletClass: "pagination-bullet",
+    bulletActiveClass: "pagination-bullet-active",
   },
 
   // Navigation arrows
