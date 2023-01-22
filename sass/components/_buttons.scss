@@ -1,0 +1,19 @@
+.portfolio__btn {
+  display: inline-block;
+  align-self: center;
+  min-width: fit-content;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  background: $bg-gradient;
+  box-shadow: 0 5px 10px 2px rgba($color-btn, 1);
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px 4px rgba($color-btn, 0.7);
+  }
+}

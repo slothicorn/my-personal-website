@@ -1,0 +1,104 @@
+// NAVIGATION
+const navItems = document.querySelectorAll(".navigation__item");
+
+const addNavListener = (navItem) => {
+  document.addEventListener("click", (event) => {
+    if (!navItem.contains(event.target) && event.target !== navItem) {
+      navItem.classList.remove("active");
+    } else {
+      navItem.classList.add("active");
+    }
+  });
+};
+
+navItems.forEach(addNavListener);
+
+// SECTION SCROLLING
+
+// const sectionList = document.querySelectorAll(".section");
+// const mainContainer = document.getElementById("main__container");
+
+// let lastScroll = 0;
+// let currentSectionIndex = 0;
+// let canScroll = true;
+
+// // const scrollDown = () => {
+// //   if (!canScroll) {
+// //     return;
+// //   }
+// //   mainContainer.style.transform =
+// //     "translateY(" +
+// //     (100 / sectionList.length) * (currentSectionIndex + 1) +
+// //     "%)";
+
+// //   currentSectionIndex++;
+
+// //   canScroll = !canScroll;
+
+// //   setInterval(() => {
+// //     canScroll = !canScroll;
+// //   }, 1000);
+// // };
+
+// const scrollToSection = (sectionIndex) => {
+//   sectionList[sectionIndex].scrollIntoView({ behavior: "smooth" });
+//   console.log(sectionList[sectionIndex]);
+// };
+
+// document.addEventListener("scroll", () => {
+//   if (!canScroll) {
+//     return;
+//   }
+
+//   let currentScroll = window.scrollY;
+
+//   if (currentScroll > lastScroll) {
+//     if (currentSectionIndex < sectionList.length - 1) {
+//       currentSectionIndex++;
+//       scrollToSection(currentSectionIndex);
+//     }
+//   } else {
+//     if (currentSectionIndex > 0) {
+//       currentSectionIndex--;
+//       scrollToSection(currentSectionIndex);
+//     }
+//   }
+
+//   canScroll = false;
+
+//   lastScroll = currentScroll;
+
+//   setTimeout(() => {
+//     canScroll = true;
+//     console.log("funguje");
+//   }, 1000);
+// });
+
+// SWIPER
+
+// import Swiper JS
+// import Swiper from "../node_modules/swiper";
+// import Swiper styles
+// import "../node_modules/swiper/css";
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: "vertical",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
