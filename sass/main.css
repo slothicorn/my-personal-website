@@ -53,6 +53,7 @@ body {
   grid-row: 1/-1;
   z-index: 10;
   height: 100vh;
+  width: 100%;
   background-color: #0a0a0a;
   display: grid;
   grid-template-columns: minmax(-webkit-min-content, 1fr);
@@ -67,11 +68,13 @@ body {
   align-items: center;
 }
 .header .profile__image {
-  height: 30rem;
-  width: 25rem;
+  width: 120%;
   background-image: url(/img/profile_img.jpg);
   background-size: cover;
+  background-position: center;
   margin-top: 2rem;
+  overflow: visible;
+  aspect-ratio: 1/1;
 }
 .header .profile__name {
   color: #fff;
