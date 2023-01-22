@@ -81,7 +81,7 @@ navItems.forEach(addNavListener);
 // import Swiper styles
 // import "../node_modules/swiper/css";
 
-const swiper = new Swiper(".swiper", {
+const swiperPortfolio = new Swiper("#swiperPortfolio", {
   // Optional parameters
   // direction: "vertical",
   loop: true,
@@ -96,5 +96,28 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+const navLabels = [];
+navItems.forEach((navItem) => {
+  const textContent = navItem.textContent;
+  navLabels.push(textContent);
+});
+
+const swiperMain = new Swiper("#swiperMain", {
+  direction: "vertical",
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
+  pagination: {
+    el: "#navigation__list",
+    clickable: true,
+    type: "custom",
+    bulletClass: "navigation__item",
+    bulletActiveClass: "active",
+    renderBullet: function (index, className) {
+      return '<li class="' + className + '">' + navLabels[index] + "</li>";
+    },
   },
 });
