@@ -3,7 +3,7 @@
   grid-row: 1 / -1;
   z-index: 10;
   height: 100vh;
-  width: 100%;
+  width: 95%;
 
   background-color: $color-header-background;
   display: grid;
@@ -19,19 +19,19 @@
 
     &__image {
       // height: 30rem;
-      width: 120%;
+      width: 110%;
       background-image: url(/img/profile_img.jpg);
       background-size: cover;
       background-position: center;
       margin-top: 2rem;
       overflow: visible;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 15 / 14;
       // border-radius: 50%;
     }
 
     &__name {
       color: $font-color-white;
-      font-size: 2rem;
+      font-size: $font-size-h3;
       text-transform: uppercase;
       margin-top: 1.5rem;
     }

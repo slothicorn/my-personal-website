@@ -17,7 +17,7 @@ const swiperPortfolio = new Swiper("#swiperPortfolio", {
   loop: true,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper__pagination",
     clickable: true,
     bulletClass: "pagination-bullet",
     bulletActiveClass: "pagination-bullet-active",
@@ -36,7 +36,6 @@ navItems.forEach((navItem) => {
 });
 
 const swiperMain = new Swiper("#swiperMain", {
-  direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 30,
   mousewheel: true,

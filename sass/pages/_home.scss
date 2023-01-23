@@ -8,11 +8,11 @@
   transition: transform 1s;
 
   &__intro {
-    font-size: 10rem;
+    font-size: $font-size-h1;
   }
 
   &__text {
-    font-size: 1.6rem;
+    font-size: $font-size-p;
     align-self: center;
     text-align: justify;
     padding: 0 5rem;

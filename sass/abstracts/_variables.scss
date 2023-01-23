@@ -13,3 +13,11 @@ $font-color-white: #fff;
 $font-color-grey: rgb(231, 231, 231);
 
 $bg-gradient: linear-gradient(to right, $color-blue, $color-purple);
+
+$font-size-h1: clamp(4rem, 8vw, 10rem);
+$font-size-h2: clamp(2rem, 5vw, 6rem);
+$font-size-h3: clamp(1.2rem, 3vw, 2rem);
+$font-size-p: clamp(0.8rem, 2vw, 1.6rem);
+
+$margin-bottom-normal: clamp(0.5rem, 2vw, 2rem);
+$margin-bottom-large: clamp(0.7rem, 3vw, 3rem);

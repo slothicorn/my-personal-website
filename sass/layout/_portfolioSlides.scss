@@ -1,7 +1,7 @@
 .portfolio {
   &__intro {
-    font-size: 6rem;
-    margin-bottom: 3rem;
+    font-size: $font-size-h2;
+    margin-bottom: $margin-bottom-large;
     align-self: center;
     @include text-gradient;
   }
@@ -28,7 +28,7 @@
 
   &__image {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: $margin-bottom-normal;
     border-radius: 3px;
     filter: brightness(0.4);
     cursor: pointer;
@@ -46,8 +46,8 @@
   &__text {
     align-self: center;
     text-align: justify;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: $font-size-p;
+    margin-bottom: $margin-bottom-normal;
     padding: 0 5rem;
   }
 
