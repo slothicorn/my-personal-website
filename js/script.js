@@ -84,7 +84,6 @@ navItems.forEach(addNavListener);
 const swiperPortfolio = new Swiper("#swiperPortfolio", {
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
