@@ -1,3 +1,7 @@
+.swiper-pagination-vertical {
+  transform: translate3d(0, 0, 0) !important;
+}
+
 html {
   font-size: 62.5%;
 }
