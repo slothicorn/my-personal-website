@@ -125,6 +125,20 @@ body {
   color: #fff;
 }
 
+.text {
+  color: rgb(231, 231, 231);
+  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  padding: 0 5rem;
+}
+
+.text__link, .text__link:active, .text__link:focus, .text__link:visited {
+  text-decoration: none;
+  background: linear-gradient(to right, #1245c6, #9909b7);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(2, 5vh) repeat(9, 1fr) 5vh;
