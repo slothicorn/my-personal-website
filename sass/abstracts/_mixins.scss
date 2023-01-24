@@ -1,5 +1,50 @@
+// MEDIA QUERY MANAGER
+
+// Breakpoints:                             1em = 16px
+// Desktop            1200px - ....px       75em
+// Tablet landscape    992px - 1200px       75em
+// Tablet portrait     768px -  992px       62em
+// Phone landscape     576px -  768px       48em
+// Phone portrait          0 -  576px       36em
+
+@mixin respond() {
+  @if $breakpoint == phone-port {
+    @media (max-width: 36em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-land {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 62em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}
+
 @mixin text-gradient {
   background: $bg-gradient;
   color: transparent;
   background-clip: text;
+}
+
+@mixin on-event() {
+  &:active,
+  &:focus,
+  &:visited {
+    @content;
+  }
 }
