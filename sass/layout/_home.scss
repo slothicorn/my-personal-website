@@ -1,0 +1,23 @@
+.home {
+  color: $font-color-grey;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 1s;
+
+  &__intro {
+    font-size: $font-size-h1;
+    background: $bg-gradient;
+    color: transparent;
+    background-clip: text;
+  }
+
+  &__text {
+    font-size: $font-size-p;
+    align-self: center;
+    text-align: justify;
+    padding: 0 5rem;
+  }
+}

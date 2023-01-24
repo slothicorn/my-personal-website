@@ -13,6 +13,44 @@ const addNavListener = (navItem) => {
 
 navItems.forEach(addNavListener);
 
+const swiperPortfolio = new Swiper("#swiperPortfolio", {
+  loop: true,
+
+  pagination: {
+    el: ".swiper__pagination",
+    clickable: true,
+    bulletClass: "pagination-bullet",
+    bulletActiveClass: "pagination-bullet-active",
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const navLabels = [];
+navItems.forEach((navItem) => {
+  const textContent = navItem.textContent;
+  navLabels.push(textContent);
+});
+
+const swiperMain = new Swiper("#swiperMain", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
+  pagination: {
+    el: "#navigation__list",
+    clickable: true,
+    type: "bullets",
+    bulletClass: "navigation__item",
+    bulletActiveClass: "active",
+    renderBullet: function (index, className) {
+      return '<li class="' + className + '">' + navLabels[index] + "</li>";
+    },
+  },
+});
+
 // SECTION SCROLLING
 
 // const sectionList = document.querySelectorAll(".section");
@@ -80,25 +118,3 @@ navItems.forEach(addNavListener);
 // import Swiper from "../node_modules/swiper";
 // import Swiper styles
 // import "../node_modules/swiper/css";
-
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: "vertical",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});

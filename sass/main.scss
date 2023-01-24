@@ -1,17 +1,22 @@
 @import "abstracts/mixins";
+@import "abstracts/utilities";
 @import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
 
+@import "components/bullets";
 @import "components/buttons";
+@import "components/icons";
 
+@import "layout/contact";
+@import "layout/download";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/home";
 @import "layout/main";
 @import "layout/navigation";
 @import "layout/portfolioSlides";
 
-@import "pages/home";
 @import "pages/swiper";

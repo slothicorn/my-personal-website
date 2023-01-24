@@ -17,3 +17,23 @@
     box-shadow: 0 8px 15px 4px rgba($color-btn, 0.7);
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: $color-white;
+  background-clip: text;
+
+  &::after {
+    color: transparent;
+  }
+}
+
+.swiper-button-next {
+  right: 5rem !important;
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: 5rem !important;
+  right: auto;
+}
