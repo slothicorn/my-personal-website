@@ -8,10 +8,10 @@
   width: 1rem;
   border-radius: 50%;
   margin: 0 1rem;
-  background: $color-blue;
+  background: $color-layout-backround;
   cursor: pointer;
 
   &-active {
-    background: $color-purple;
+    background: $color-white;
   }
 }

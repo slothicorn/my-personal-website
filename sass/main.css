@@ -36,11 +36,11 @@ body {
   width: 1rem;
   border-radius: 50%;
   margin: 0 1rem;
-  background: #1245c6;
+  background: #0a0a0a;
   cursor: pointer;
 }
 .pagination-bullet-active {
-  background: #9909b7;
+  background: #fff;
 }
 
 .portfolio__btn {
@@ -65,7 +65,7 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  background: linear-gradient(to right, #1245c6, #9909b7);
+  background: #fff;
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -105,7 +105,7 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  font-size: calc(clamp(0.8rem, 2vw, 1.6rem) * 1.1);
 }
 
 .contact:not(:last-child) {
@@ -127,7 +127,7 @@ body {
 
 .text {
   color: rgb(231, 231, 231);
-  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  font-size: calc(clamp(0.8rem, 2vw, 1.6rem) * 1.1);
   padding: 0 5rem;
 }
 
@@ -193,6 +193,27 @@ body {
 .header .socials__link:link:hover, .header .socials__link:visited:hover {
   transform: translateY(-2px);
   box-shadow: 0 3px 8px #1245c6;
+}
+
+.home {
+  color: rgb(231, 231, 231);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s;
+}
+.home__intro {
+  font-size: clamp(4rem, 8vw, 10rem);
+  background: linear-gradient(to right, #1245c6, #9909b7);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.home__text {
+  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  align-self: center;
+  text-align: justify;
+  padding: 0 5rem;
 }
 
 .main {
@@ -335,23 +356,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(231, 231, 231);
-}
-
-.home {
-  color: rgb(231, 231, 231);
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  transition: transform 1s;
-}
-.home__intro {
-  font-size: clamp(4rem, 8vw, 10rem);
-}
-.home__text {
-  font-size: clamp(0.8rem, 2vw, 1.6rem);
-  align-self: center;
-  text-align: justify;
-  padding: 0 5rem;
 }
 
 .swiper {

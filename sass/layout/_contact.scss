@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  font-size: $font-size-p;
+  font-size: calc($font-size-p * 1.1);
 }
 
 .contact:not(:last-child) {

@@ -9,6 +9,9 @@
 
   &__intro {
     font-size: $font-size-h1;
+    background: $bg-gradient;
+    color: transparent;
+    background-clip: text;
   }
 
   &__text {

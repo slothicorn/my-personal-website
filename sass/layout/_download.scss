@@ -1,6 +1,6 @@
 .text {
   color: $font-color-grey;
-  font-size: $font-size-p;
+  font-size: calc($font-size-p * 1.1);
   padding: 0 5rem;
 }
 
