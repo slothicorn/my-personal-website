@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-p;
+}
+
+.contact:not(:last-child) {
+  margin-bottom: $margin-bottom-normal;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    &,
+    &:active,
+    &:visited,
+    &:focus {
+      text-decoration: none;
+      color: $font-color-grey;
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      color: $font-color-white;
+    }
+  }
+}

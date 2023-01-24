@@ -57,18 +57,5 @@
         box-shadow: 0 3px 8px $color-blue;
       }
     }
-
-    &__icon {
-      width: 100%;
-      height: 100%;
-      background: $bg-gradient;
-      border-radius: 50%;
-      color: $color-header-background;
-      box-shadow: inset 0 0 2px 2px $color-header-background,
-        inset 0 0 2px 2px $color-header-background,
-        inset 0 0 2px 2px $color-header-background,
-        inset 0 0 2px 2px $color-header-background;
-      //gradient na pozadi preteka, resi to nahusteny inset stin, nez se najde lepsi reseni
-    }
   }
 }
