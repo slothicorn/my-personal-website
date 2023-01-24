@@ -84,6 +84,47 @@ body {
   right: auto;
 }
 
+.socials__icon {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #1245c6, #9909b7);
+  border-radius: 50%;
+  color: #0a0a0a;
+  box-shadow: inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a;
+}
+
+.contact__icon {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(to right, #1245c6, #9909b7);
+  border-radius: 50%;
+  color: rgb(27, 27, 27);
+  box-shadow: inset 0 0 2px 2px rgb(27, 27, 27), inset 0 0 2px 2px rgb(27, 27, 27), inset 0 0 2px 2px rgb(27, 27, 27), inset 0 0 2px 2px rgb(27, 27, 27);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.8rem, 2vw, 1.6rem);
+}
+
+.contact:not(:last-child) {
+  margin-bottom: clamp(0.5rem, 2vw, 2rem);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact__link, .contact__link:active, .contact__link:visited, .contact__link:focus {
+  text-decoration: none;
+  color: rgb(231, 231, 231);
+  margin-left: 1rem;
+}
+.contact__link:hover {
+  color: #fff;
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(2, 5vh) repeat(9, 1fr) 5vh;
@@ -138,14 +179,6 @@ body {
 .header .socials__link:link:hover, .header .socials__link:visited:hover {
   transform: translateY(-2px);
   box-shadow: 0 3px 8px #1245c6;
-}
-.header .socials__icon {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #1245c6, #9909b7);
-  border-radius: 50%;
-  color: #0a0a0a;
-  box-shadow: inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a, inset 0 0 2px 2px #0a0a0a;
 }
 
 .main {
