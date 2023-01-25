@@ -56,11 +56,11 @@
     &:active,
     &:focus,
     &:visited {
-      font-size: 1.7rem;
+      font-size: $font-size-button;
       font-weight: 500;
       text-transform: uppercase;
       text-decoration: none;
-      color: $font-color-grey;
+      margin-bottom: $margin-bottom-large;
     }
   }
 }

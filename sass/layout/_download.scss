@@ -11,7 +11,8 @@
   &:visited {
     text-decoration: none;
     background: $bg-gradient;
-    color: transparent;
-    background-clip: text;
+    color: $font-color-grey;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
   }
 }

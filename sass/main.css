@@ -43,7 +43,7 @@ body {
   background: #fff;
 }
 
-.portfolio__btn {
+.button-gradient {
   display: inline-block;
   align-self: center;
   min-width: -webkit-fit-content;
@@ -54,11 +54,12 @@ body {
   border-radius: 3rem;
   background: linear-gradient(to right, #1245c6, #9909b7);
   box-shadow: 0 5px 10px 2px #0e0e0e;
-  margin-bottom: 3rem;
+  color: #fff;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.portfolio__btn:hover {
+.button-gradient:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px 4px rgba(14, 14, 14, 0.7);
 }
@@ -134,9 +135,9 @@ body {
 .text__link, .text__link:active, .text__link:focus, .text__link:visited {
   text-decoration: none;
   background: linear-gradient(to right, #1245c6, #9909b7);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: rgb(231, 231, 231);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
 }
 
 body {
@@ -351,11 +352,11 @@ body {
   padding: 0 5rem;
 }
 .portfolio__link, .portfolio__link:active, .portfolio__link:focus, .portfolio__link:visited {
-  font-size: 1.7rem;
+  font-size: clamp(0.9rem, 2vw, 1.7rem);
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(231, 231, 231);
+  margin-bottom: clamp(0.7rem, 3vw, 3rem);
 }
 
 .swiper {
