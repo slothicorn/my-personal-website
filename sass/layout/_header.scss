@@ -26,7 +26,6 @@
       margin-top: 2rem;
       overflow: visible;
       aspect-ratio: 15 / 14;
-      // border-radius: 50%;
     }
 
     &__name {
@@ -41,6 +40,7 @@
     &__links {
       display: flex;
       justify-content: space-around;
+      flex-direction: row;
     }
 
     &__link:link,

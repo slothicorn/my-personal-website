@@ -7,7 +7,7 @@
 // Phone landscape     576px -  768px       48em
 // Phone portrait          0 -  576px       36em
 
-@mixin respond() {
+@mixin respond($breakpoint) {
   @if $breakpoint == phone-port {
     @media (max-width: 36em) {
       @content;

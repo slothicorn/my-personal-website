@@ -6,33 +6,14 @@
     @include text-gradient;
   }
 
-  &__wrapper {
-    width: 60%;
-    position: relative;
-
-    &::before {
-      content: "Zoom in";
-      min-width: fit-content;
-      position: absolute;
-      width: 3rem;
-      height: 6rem;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: $font-color-grey;
-      font-size: 3rem;
-      text-transform: uppercase;
-      z-index: 1;
-    }
-  }
-
   &__image {
-    width: 100%;
+    width: 50%;
     margin-bottom: $margin-bottom-normal;
     border-radius: 3px;
     filter: brightness(0.4);
     cursor: pointer;
     box-shadow: 0 8px 15px 4px rgba($color-btn, 0.7);
+    position: relative;
 
     transition: all 0.4s ease;
 
@@ -41,6 +22,21 @@
       box-shadow: 1px 3px 8px $color-blue, 0 3px 8px $color-purple;
       filter: brightness(1);
     }
+  }
+
+  &::before {
+    content: "Zoom in";
+    position: absolute;
+    width: 3rem;
+    min-width: fit-content;
+    height: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $font-color-grey;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 10;
   }
 
   &__text {
