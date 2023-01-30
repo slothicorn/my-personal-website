@@ -4,16 +4,13 @@ const hamburger = document.getElementById("hamburger");
 const headerCurtain = document.getElementById("header__curtain");
 const navList = document.getElementById("navigation__list");
 
-console.log(navList);
-
 document.addEventListener("click", (event) => {
-  if (event.target === hamburger) {
+  if (hamburger.contains(event.target)) {
     headerEl.classList.toggle("is-open");
     headerWrapper.classList.toggle("is-open");
   } else if (
-    (headerEl.classList.contains("is-open") &&
-      headerCurtain.contains(event.target)) ||
-    (headerEl.classList.contains("is-open") && navList.contains(event.target))
+    headerCurtain.contains(event.target) ||
+    navList.contains(event.target)
   ) {
     headerEl.classList.remove("is-open");
     headerWrapper.classList.remove("is-open");
