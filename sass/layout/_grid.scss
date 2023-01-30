@@ -3,4 +3,9 @@ body {
 
   grid-template-columns: repeat(2, 5vh) repeat(9, 1fr) 5vh;
   grid-template-rows: 5vh 90vh 5vh;
+
+  @include respond(phone-land) {
+    grid-template-columns: repeat(2, 2vh) repeat(9, 1fr) 2vh;
+    grid-template-rows: 2vh 96vh 2vh;
+  }
 }
