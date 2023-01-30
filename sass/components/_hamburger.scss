@@ -1,0 +1,43 @@
+.hamburger {
+  display: grid;
+  place-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: $bg-gradient;
+  cursor: pointer;
+  display: none;
+
+  @include respond(tab-port) {
+    display: grid;
+  }
+
+  &__line {
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background: $color-main-background;
+    border-radius: 999px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 0.3rem;
+      top: -0.9rem;
+      background: $color-main-background;
+      border-radius: 999px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      height: 0.3rem;
+      top: 0.9rem;
+      background: $color-main-background;
+      border-radius: 999px;
+    }
+  }
+}

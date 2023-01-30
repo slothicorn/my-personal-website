@@ -24,61 +24,67 @@
     <title>CV -Jana Baranová</title>
   </head>
   <body>
-    <header id="header" class="header">
-      <section id="profile" class="profile header__profile">
-        <div class="profile__image"></div>
-        <h3 class="profile__name" id="profile__name">Jana Baranová</h3>
-      </section>
-      <nav id="navigation" class="navigation header__navigation">
-        <ul id="navigation__list" class="navigation__list">
-          <li class="navigation__item">Home</li>
-          <li class="navigation__item">Portfolio</li>
-          <li class="navigation__item">Contact</li>
-          <li class="navigation__item">Download</li>
-        </ul>
-      </nav>
-      <section id="socials" class="socials header__socials">
-        <div class="socials__links">
-          <a
-            href="https://github.com/slothicorn"
-            target="_blank"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#github_icon"></use>
-            </svg>
-          </a>
-          <a
-            target="blank"
-            href="https://www.linkedin.com/in/jana-baranov%C3%A1-83b3b2259/"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#linked_in_icon"></use>
-            </svg>
-          </a>
-          <a
-            href="mailto:jana.baranov4@gmail.com"
-            target="_blank"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#gmail_icon"></use>
-            </svg>
-          </a>
-          <a
-            target="blank"
-            href="https://api.whatsapp.com/send?phone=420792249009"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#whatsapp_icon"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
+    <header class="header" id="header">
+      <div class="header__wrapper" id="header__wrapper">
+        <section class="header__profile">
+          <div class="header__image"></div>
+          <h3 class="header__name">Jana Baranová</h3>
+        </section>
+        <nav class="navigation header__navigation">
+          <ul id="navigation__list" class="navigation__list">
+            <li class="navigation__item">Home</li>
+            <li class="navigation__item">Portfolio</li>
+            <li class="navigation__item">Contact</li>
+            <li class="navigation__item">Download</li>
+          </ul>
+        </nav>
+        <section class="socials header__socials">
+          <div class="socials__links">
+            <a
+              href="https://github.com/slothicorn"
+              target="_blank"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#github_icon"></use>
+              </svg>
+            </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/jana-baranov%C3%A1-83b3b2259/"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#linked_in_icon"></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:jana.baranov4@gmail.com"
+              target="_blank"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#gmail_icon"></use>
+              </svg>
+            </a>
+            <a
+              target="blank"
+              href="https://api.whatsapp.com/send?phone=420792249009"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#whatsapp_icon"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="hamburger header__hmb" id="hamburger">
+        <span class="hamburger__line"></span>
+      </div>
+      <div class="header__curtain" id="header__curtain"></div>
     </header>
-    <main id="main" class="main">
+    <main class="main">
       <div id="swiperMain" class="main__container swiper">
         <div class="swiper-wrapper wrapper">
           <section class="section home swiper-slide">
