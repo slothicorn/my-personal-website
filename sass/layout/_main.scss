@@ -33,5 +33,9 @@
     grid-row: 1 / span 1;
     color: $font-color-white;
     margin: 1rem;
+
+    @include respond(tab-port) {
+      grid-column: 1 / -1;
+    }
   }
 }

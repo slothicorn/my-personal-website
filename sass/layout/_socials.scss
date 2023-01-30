@@ -1,0 +1,22 @@
+.socials {
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 8px $color-blue;
+    }
+  }
+}

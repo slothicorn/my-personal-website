@@ -1,3 +1,25 @@
+const headerEl = document.getElementById("header");
+const headerWrapper = document.getElementById("header__wrapper");
+const hamburger = document.getElementById("hamburger");
+const headerCurtain = document.getElementById("header__curtain");
+const navList = document.getElementById("navigation__list");
+
+console.log(navList);
+
+document.addEventListener("click", (event) => {
+  if (event.target === hamburger) {
+    headerEl.classList.toggle("is-open");
+    headerWrapper.classList.toggle("is-open");
+  } else if (
+    (headerEl.classList.contains("is-open") &&
+      headerCurtain.contains(event.target)) ||
+    (headerEl.classList.contains("is-open") && navList.contains(event.target))
+  ) {
+    headerEl.classList.remove("is-open");
+    headerWrapper.classList.remove("is-open");
+  }
+});
+
 // NAVIGATION
 const navItems = document.querySelectorAll(".navigation__item");
 
@@ -39,6 +61,7 @@ const swiperMain = new Swiper("#swiperMain", {
   slidesPerView: 1,
   spaceBetween: 30,
   mousewheel: true,
+  direction: "vertical",
   pagination: {
     el: "#navigation__list",
     clickable: true,

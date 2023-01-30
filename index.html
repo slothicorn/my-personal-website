@@ -24,61 +24,67 @@
     <title>CV -Jana Baranová</title>
   </head>
   <body>
-    <header id="header" class="header">
-      <section id="profile" class="profile header__profile">
-        <div class="profile__image"></div>
-        <h3 class="profile__name" id="profile__name">Jana Baranová</h3>
-      </section>
-      <nav id="navigation" class="navigation header__navigation">
-        <ul id="navigation__list" class="navigation__list">
-          <li class="navigation__item">Home</li>
-          <li class="navigation__item">Portfolio</li>
-          <li class="navigation__item">Contact</li>
-          <li class="navigation__item">Download</li>
-        </ul>
-      </nav>
-      <section id="socials" class="socials header__socials">
-        <div class="socials__links">
-          <a
-            href="https://github.com/slothicorn"
-            target="_blank"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#github_icon"></use>
-            </svg>
-          </a>
-          <a
-            target="blank"
-            href="https://www.linkedin.com/in/jana-baranov%C3%A1-83b3b2259/"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#linked_in_icon"></use>
-            </svg>
-          </a>
-          <a
-            href="mailto:jana.baranov4@gmail.com"
-            target="_blank"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#gmail_icon"></use>
-            </svg>
-          </a>
-          <a
-            target="blank"
-            href="https://api.whatsapp.com/send?phone=420792249009"
-            class="socials__link"
-          >
-            <svg class="socials__icon">
-              <use href="img/sprite_social.svg#whatsapp_icon"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
+    <header class="header" id="header">
+      <div class="header__wrapper" id="header__wrapper">
+        <section class="header__profile">
+          <div class="header__image"></div>
+          <h3 class="header__name">Jana Baranová</h3>
+        </section>
+        <nav class="navigation header__navigation">
+          <ul id="navigation__list" class="navigation__list">
+            <li class="navigation__item">Home</li>
+            <li class="navigation__item">Portfolio</li>
+            <li class="navigation__item">Contact</li>
+            <li class="navigation__item">Download</li>
+          </ul>
+        </nav>
+        <section class="socials header__socials">
+          <div class="socials__links">
+            <a
+              href="https://github.com/slothicorn"
+              target="_blank"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#github_icon"></use>
+              </svg>
+            </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/jana-baranov%C3%A1-83b3b2259/"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#linked_in_icon"></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:jana.baranov4@gmail.com"
+              target="_blank"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#gmail_icon"></use>
+              </svg>
+            </a>
+            <a
+              target="blank"
+              href="https://api.whatsapp.com/send?phone=420792249009"
+              class="socials__link"
+            >
+              <svg class="socials__icon">
+                <use href="img/sprite_social.svg#whatsapp_icon"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="hamburger header__hmb" id="hamburger">
+        <span class="hamburger__line"></span>
+      </div>
+      <div class="header__curtain" id="header__curtain"></div>
     </header>
-    <main id="main" class="main">
+    <main class="main">
       <div id="swiperMain" class="main__container swiper">
         <div class="swiper-wrapper wrapper">
           <section class="section home swiper-slide">
@@ -94,16 +100,13 @@
           </section>
           <section id="swiperPortfolio" class="swiper swiper-slide">
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide portfolio">
                 <h2 class="portfolio__intro">Natours Project</h2>
-                <div class="portfolio__wrapper">
-                  <img
-                    class="portfolio__image"
-                    src="img/porfolio/natours.jpg"
-                    alt=""
-                  />
-                </div>
+                <img
+                  class="portfolio__image"
+                  src="img/porfolio/natours.jpg"
+                  alt=""
+                />
                 <p class="portfolio__text">
                   This was my first webpage project I've created as a part of
                   advanced CSS and Sass course. Everything is pure CSS using
@@ -111,24 +114,22 @@
                   they take many little details to form an animation fun to
                   watch.
                 </p>
-                <button class="portfolio__btn">
-                  <a
-                    href="https://slothicorn.github.io/advanced-css-sass-course-natours/"
-                    class="portfolio__link"
-                    target="_blank"
-                    >Visit page</a
-                  >
-                </button>
+                <a
+                  href="https://slothicorn.github.io/advanced-css-sass-course-natours/"
+                  class="portfolio__link"
+                  target="_blank"
+                  ><button class="portfolio__btn button-gradient">
+                    Visit page
+                  </button></a
+                >
               </div>
               <div class="swiper-slide portfolio">
                 <h2 class="portfolio__intro">Trillo Project</h2>
-                <div class="portfolio__wrapper">
-                  <img
-                    class="portfolio__image"
-                    src="img/porfolio/trillo.jpg"
-                    alt=""
-                  />
-                </div>
+                <img
+                  class="portfolio__image"
+                  src="img/porfolio/trillo.jpg"
+                  alt=""
+                />
                 <p class="portfolio__text">
                   Trillo page is a great layout for travel agengcies or small
                   business owners renting properties. Project is a second part
@@ -136,48 +137,45 @@
                   was fun to build from top to bottom, but to me what stands out
                   the most is nav-menu animation.
                 </p>
-                <button class="portfolio__btn">
-                  <a
-                    href="https://slothicorn.github.io/advanced-css-sass-course-trillo/"
-                    class="portfolio__link"
-                    target="_blank"
-                    >Visit page</a
-                  >
-                </button>
+                <a
+                  href="https://slothicorn.github.io/advanced-css-sass-course-trillo/"
+                  class="portfolio__link"
+                  target="_blank"
+                  ><button class="portfolio__btn button-gradient">
+                    Visit page
+                  </button></a
+                >
               </div>
               <div class="swiper-slide portfolio">
                 <h2 class="portfolio__intro">Nexter Project</h2>
-                <div class="portfolio__wrapper">
-                  <img
-                    class="portfolio__image"
-                    src="img/porfolio/nexter.jpg"
-                    alt=""
-                  />
-                </div>
+                <img
+                  class="portfolio__image"
+                  src="img/porfolio/nexter.jpg"
+                  alt=""
+                />
                 <p class="portfolio__text">
                   Nexter project a layout suitable for realtors. Trillo page is
                   a third and last project of advanced CSS and Sass course. It's
                   using modern grid design in combination with flex. Beside
                   that, I've learned how to work with svg's or creating sprites.
                 </p>
-                <button class="portfolio__btn">
-                  <a
-                    href="https://slothicorn.github.io/advanced-css-sass-course-nexter/"
-                    class="portfolio__link"
-                    target="_blank"
-                    >Visit page</a
-                  >
-                </button>
+                <a
+                  href="https://slothicorn.github.io/advanced-css-sass-course-nexter/"
+                  class="portfolio__link"
+                  target="_blank"
+                >
+                  <button class="portfolio__btn button-gradient">
+                    Visit page
+                  </button></a
+                >
               </div>
               <div class="swiper-slide portfolio">
                 <h2 class="portfolio__intro">Blog Layout</h2>
-                <div class="portfolio__wrapper">
-                  <img
-                    class="portfolio__image"
-                    src="img/porfolio/blog.jpg"
-                    alt=""
-                  />
-                </div>
+                <img
+                  class="portfolio__image"
+                  src="img/porfolio/blog.jpg"
+                  alt=""
+                />
                 <p class="portfolio__text">
                   This blog offers a large variety of ways for use. It's a great
                   landing page for any kind of content. I created this project
@@ -185,16 +183,40 @@
                   contains some basic javascript to make this page even more
                   alive and communicating with user.
                 </p>
-                <button class="portfolio__btn">
-                  <a
-                    href="https://slothicorn.github.io/Blog-Layout/"
-                    class="portfolio__link"
-                    target="_blank"
-                    >Visit page</a
-                  >
-                </button>
+
+                <a
+                  href="https://slothicorn.github.io/Blog-Layout/"
+                  class="portfolio__link"
+                  target="_blank"
+                  ><button class="portfolio__btn button-gradient">
+                    Visit page
+                  </button></a
+                >
+              </div>
+              <div class="swiper-slide portfolio">
+                <h2 class="portfolio__intro">Fallback Page</h2>
+                <img
+                  class="portfolio__image"
+                  src="img/porfolio/fallback_page.jpg"
+                  alt=""
+                />
+
+                <p class="portfolio__text">
+                  LifeCode is a friend's project I'm collaborating on. My
+                  responsibilties are styles and responsivity.
+                </p>
+
+                <a
+                  href="https://slothicorn.github.io/Blog-Layout/"
+                  class="portfolio__link"
+                  target="_blank"
+                  ><button class="portfolio__btn button-gradient">
+                    Visit page
+                  </button></a
+                >
               </div>
             </div>
+
             <div class="swiper__pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
