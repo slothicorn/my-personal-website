@@ -47,26 +47,28 @@
 
     &::after {
       content: "";
-      width: 2rem;
-      height: 0.3rem;
+      width: clamp(.5rem, 2.8vw, 3rem);
+      height: clamp(.2rem, .6vw, .4rem);
       left: 50%;
       top: 64%;
       background: $bg-gradient;
       border-radius: 999rem;
       position: absolute;
       transform: translate(-50%, -50%) rotate(30deg);
+      transform-origin: center;
     }
 
     &::before {
       content: "";
-      width: 2rem;
-      height: 0.3rem;
+      width: clamp(.5rem, 2.8vw, 3rem);
+      height: clamp(.2rem, .6vw, .4rem);
       left: 50%;
       top: 36%;
       background: $bg-gradient;
       border-radius: 999rem;
       position: absolute;
       transform: translate(-50%, -50%) rotate(-30deg);
+      transform-origin: center;
     }
   }
 
@@ -76,8 +78,8 @@
 
     &::after {
       content: "";
-      width: 2rem;
-      height: 0.3rem;
+      width: clamp(.5rem, 2.8vw, 3rem);
+      height: clamp(.2rem, .6vw, .4rem);
       left: 50%;
       top: 64%;
       background: $bg-gradient;
@@ -88,8 +90,8 @@
 
     &::before {
       content: "";
-      width: 2rem;
-      height: 0.3rem;
+      width: clamp(.5rem, 2.8vw, 3rem);
+      height: clamp(.2rem, .6vw, .4rem);
       left: 50%;
       top: 36%;
       background: $bg-gradient;

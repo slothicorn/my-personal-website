@@ -110,25 +110,27 @@ body {
 }
 .swiper__btn--previous::after {
   content: "";
-  width: 2rem;
-  height: 0.3rem;
+  width: clamp(0.5rem, 2.8vw, 3rem);
+  height: clamp(0.2rem, 0.6vw, 0.4rem);
   left: 50%;
   top: 64%;
   background: linear-gradient(to right, #1245c6, #9909b7);
   border-radius: 999rem;
   position: absolute;
   transform: translate(-50%, -50%) rotate(30deg);
+  transform-origin: center;
 }
 .swiper__btn--previous::before {
   content: "";
-  width: 2rem;
-  height: 0.3rem;
+  width: clamp(0.5rem, 2.8vw, 3rem);
+  height: clamp(0.2rem, 0.6vw, 0.4rem);
   left: 50%;
   top: 36%;
   background: linear-gradient(to right, #1245c6, #9909b7);
   border-radius: 999rem;
   position: absolute;
   transform: translate(-50%, -50%) rotate(-30deg);
+  transform-origin: center;
 }
 .swiper__btn--next {
   right: clamp(4rem, 6vw, 6rem);
@@ -136,8 +138,8 @@ body {
 }
 .swiper__btn--next::after {
   content: "";
-  width: 2rem;
-  height: 0.3rem;
+  width: clamp(0.5rem, 2.8vw, 3rem);
+  height: clamp(0.2rem, 0.6vw, 0.4rem);
   left: 50%;
   top: 64%;
   background: linear-gradient(to right, #1245c6, #9909b7);
@@ -147,8 +149,8 @@ body {
 }
 .swiper__btn--next::before {
   content: "";
-  width: 2rem;
-  height: 0.3rem;
+  width: clamp(0.5rem, 2.8vw, 3rem);
+  height: clamp(0.2rem, 0.6vw, 0.4rem);
   left: 50%;
   top: 36%;
   background: linear-gradient(to right, #1245c6, #9909b7);
