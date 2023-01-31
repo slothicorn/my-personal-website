@@ -15,29 +15,87 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px 4px rgba($color-btn, 0.7);
+    box-shadow: 0 8px 15px 4px rgba($color-btn, .7);
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background: $color-white;
-  background-clip: text;
-  position: absolute;
-  top: clamp(40%, 1%, 45%) !important;
-  z-index: 999;
+.swiper__btn {
 
-  &::after {
-    color: $color-white;
+  &--previous,
+  &--next {
+    position: absolute;
+    height: clamp(2rem, 4vw, 5rem);
+    width: clamp(2rem, 4vw, 5rem);
+    top: clamp(40%, 1%, 45%);
+    z-index: 999;
+    border-radius: .5rem;
+    background: $bg-swiper-btn;
+    box-shadow: 0 -.2 1rem ($color-blue), 0 -.2rem 1rem ($color-purple);
+    cursor: pointer;
+    transition: all .2s ease;
+
+    @include animation-pulse;
+
+    &:hover {
+      background: $bg-swiper-btn-hover;
+    }
   }
-}
 
-.swiper-button-next {
-  right: 5rem !important;
-  left: auto;
-}
+  &--previous {
+    left: clamp(4rem, 6vw, 6rem);
+    right: auto;
 
-.swiper-button-prev {
-  left: 5rem !important;
-  right: auto;
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 0.3rem;
+      left: 50%;
+      top: 64%;
+      background: $bg-gradient;
+      border-radius: 999rem;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(30deg);
+    }
+
+    &::before {
+      content: "";
+      width: 2rem;
+      height: 0.3rem;
+      left: 50%;
+      top: 36%;
+      background: $bg-gradient;
+      border-radius: 999rem;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-30deg);
+    }
+  }
+
+  &--next {
+    right: clamp(4rem, 6vw, 6rem);
+    left: auto;
+
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 0.3rem;
+      left: 50%;
+      top: 64%;
+      background: $bg-gradient;
+      border-radius: 999rem;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-30deg);
+    }
+
+    &::before {
+      content: "";
+      width: 2rem;
+      height: 0.3rem;
+      left: 50%;
+      top: 36%;
+      background: $bg-gradient;
+      border-radius: 999rem;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(30deg);
+    }
+  }
 }

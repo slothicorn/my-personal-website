@@ -43,8 +43,8 @@ const swiperPortfolio = new Swiper("#swiperPortfolio", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper__btn--next",
+    prevEl: ".swiper__btn--previous",
   },
 });
 
