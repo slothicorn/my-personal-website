@@ -23,9 +23,12 @@
 .swiper-button-next {
   background: $color-white;
   background-clip: text;
+  position: absolute;
+  top: clamp(40%, 1%, 45%) !important;
+  z-index: 999;
 
   &::after {
-    color: transparent;
+    color: $color-white;
   }
 }
 

@@ -4,12 +4,13 @@
 
   &-wrapper {
     height: 97% !important; //swiper default style 100%
+    position: relative;
   }
 
   &-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
