@@ -316,7 +316,7 @@ body {
 }
 .header__image {
   width: 110%;
-  background-image: url(/img/profile_img.jpg);
+  background-image: url(../img/profile_img.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem;
