@@ -48,3 +48,24 @@
     @content;
   }
 }
+
+@mixin animation-pulse {
+  animation: pulse 3s ease-in-out infinite;
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 3px 8px rgba($color-blue, 1),
+        0 3px 8px rgba($color-purple, 1);
+    }
+
+    70% {
+      box-shadow: 0 3px 8px rgba($color-blue, 0.3),
+        0 3px 8px rgba($color-purple, 0.3);
+    }
+
+    100% {
+      box-shadow: 0 3px 8px rgba($color-blue, 1),
+        0 3px 8px rgba($color-purple, 1);
+    }
+  }
+}

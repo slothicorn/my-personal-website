@@ -7,9 +7,8 @@
   height: 100vh;
 
   @include respond(tab-port) {
-    position: fixed;
-    left: 9vw;
-    min-width: fit-content;
+    grid-column: unset;
+    grid-row: unset;
   }
 
   &__wrapper {
@@ -26,7 +25,9 @@
 
     @include respond(tab-port) {
       transform: translateX(-450%);
-
+      position: fixed;
+      left: 9vw;
+      min-width: fit-content;
       transition: all 0.4s ease;
     }
 
@@ -67,6 +68,10 @@
 
     @include respond(tab-port) {
       display: grid;
+    }
+
+    @include respond(phone-land) {
+      inset: 3rem auto auto 3rem;
     }
   }
 
