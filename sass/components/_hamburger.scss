@@ -40,4 +40,8 @@
       border-radius: 999px;
     }
   }
+
+  :where(.header).is-open & {
+    background: white;
+  }
 }
