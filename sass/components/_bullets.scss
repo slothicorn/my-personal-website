@@ -9,10 +9,10 @@
   width: 1rem;
   border-radius: 50%;
   margin: 0 1rem;
-  background: $color-layout-backround;
+  background: $color-bullet;
   cursor: pointer;
 
   &-active {
-    background: $color-white;
+    background: $bg-gradient;
   }
 }
