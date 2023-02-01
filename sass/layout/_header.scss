@@ -27,7 +27,7 @@
       transform: translateX(-450%);
       position: fixed;
       left: 9vw;
-      min-width: fit-content;
+      width: 40vw;
       transition: all 0.4s ease;
     }
 
@@ -45,12 +45,17 @@
 
   &__image {
     width: 110%;
-    background-image: url(../img/profile_img.jpg);
-    background-size: cover;
-    background-position: center;
     margin-top: 2rem;
     overflow: visible;
     aspect-ratio: 15 / 14;
+    display: grid;
+    place-items: center;
+
+    :where(img) {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__name {
