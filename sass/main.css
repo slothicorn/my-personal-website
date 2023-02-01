@@ -357,9 +357,7 @@ body {
     transform: translateX(-450%);
     position: fixed;
     left: 9vw;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    width: 40vw;
     transition: all 0.4s ease;
   }
 }
@@ -374,12 +372,17 @@ body {
 }
 .header__image {
   width: 110%;
-  background-image: url(../img/profile_img.jpg);
-  background-size: cover;
-  background-position: center;
   margin-top: 2rem;
   overflow: visible;
   aspect-ratio: 15/14;
+  display: grid;
+  place-items: center;
+}
+.header__image :where(img) {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header__name {
   color: #fff;
