@@ -61,7 +61,6 @@
         transform: translate(-50%, 1px);
       }
     }
-
   }
 
   :where(.header).is-open & {
@@ -87,11 +86,3 @@
     }
   }
 }
-
-
-// #hamburger-6.is-active .line:nth-child(3){
-//   -webkit-transform: translateY(-13px) rotate(90deg);
-//   -ms-transform: translateY(-13px) rotate(90deg);
-//   -o-transform: translateY(-13px) rotate(90deg);
-//   transform: translateY(-13px) rotate(90deg);
-// }

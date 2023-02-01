@@ -401,7 +401,7 @@ body {
 }
 @media (max-width: 48em) {
   .header__hmb {
-    inset: 3rem auto auto 3rem;
+    inset: 2rem auto auto 2rem;
   }
 }
 .header__curtain {
