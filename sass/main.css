@@ -555,7 +555,7 @@ body {
 }
 @media (max-width: 36em) {
   .portfolio__text {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
 }
 .portfolio__link, .portfolio__link:active, .portfolio__link:focus, .portfolio__link:visited {
