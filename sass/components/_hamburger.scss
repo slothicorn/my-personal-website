@@ -20,14 +20,19 @@
     border-radius: 999px;
     position: relative;
 
+    transition: all 0.3s ease-in-out;
+
     &::before {
       content: "";
       position: absolute;
       width: 3rem;
       height: 0.3rem;
       top: -0.9rem;
+      left: 50%;
+      transform: translateX(-50%);
       background: $color-main-background;
       border-radius: 999px;
+      transition: all 0.3s ease-in-out;
     }
 
     &::after {
@@ -36,12 +41,57 @@
       width: 3rem;
       height: 0.3rem;
       top: 0.9rem;
+      left: 50%;
+      transform: translateX(-50%);
       background: $color-main-background;
       border-radius: 999px;
+      transition: all 0.3s ease-in-out;
     }
   }
 
+  :where(&:hover) & {
+    &__line {
+      transition: all .2s ease;
+
+      &::before {
+        transform: translate(-50%, -1px);
+      }
+
+      &::after {
+        transform: translate(-50%, 1px);
+      }
+    }
+
+  }
+
   :where(.header).is-open & {
-    background: white;
+    transition: all 0.3s ease-in-out;
+    transition-delay: .6s;
+    transform: rotate(45deg);
+
+    &__line {
+      width: 0;
+
+      &::before,
+      &::after {
+        transition-delay: .3s;
+      }
+
+      &::before {
+        transform: translate(-50%, .9rem);
+      }
+
+      &::after {
+        transform: translate(-50%, -.9rem) rotate(90deg);
+      }
+    }
   }
 }
+
+
+// #hamburger-6.is-active .line:nth-child(3){
+//   -webkit-transform: translateY(-13px) rotate(90deg);
+//   -ms-transform: translateY(-13px) rotate(90deg);
+//   -o-transform: translateY(-13px) rotate(90deg);
+//   transform: translateY(-13px) rotate(90deg);
+// }

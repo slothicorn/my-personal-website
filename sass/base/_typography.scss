@@ -1,4 +1,9 @@
 body {
   font-family: "Source Code Pro", monospace;
+  line-height: 1.5;
   background-color: $color-layout-backround;
+
+  @include respond(tab-port) {
+    line-height: 1.3;
+  }
 }
